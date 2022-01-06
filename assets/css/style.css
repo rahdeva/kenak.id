@@ -1,23 +1,36 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     /* font-family: Inter; */
 }
 
-header {
+.navbar{
+    height: 80px;
     display: flex;
-    max-height: 80px;
+    background-color: white;
+    align-items: center;
 }
 
-#logo-kenak.id{
-    display: flex;
-    flex: 20%;
+.space-header{
+    flex: 1;
+}
+
+.logo-image{
+    height: 50%;
+    margin: 12px 10px 12px 32px;
+}
+
+.text-logo-image{
+    height: 25%;
+    margin: 24px 0px 24px 10px;
 }
 
 nav a {
     font-size: 18px;
     font-weight: 400;
     text-decoration: none;
-    color: white;
+    color: #718096;
 }
 
 nav a:hover {
@@ -31,22 +44,21 @@ nav li {
 }
 
 nav {
-    background-color: #00a2c6;
-    padding: 5px;
+    text-align: right;
+    padding: 24px;
+    padding-right: 32px;
     position: sticky;
     top: 0;
 }
 
 body {
-    font-family: 'Quicksand', sans-serif;
-    margin: 0;
-    padding: 0;
+    background-color: white;
 }
 
 footer {
     padding: 20px;
     color: white;
-    background-color: #00a2c6;
+    background-color: #5CE0E6;
     text-align: center;
     font-weight: bold;
 }
