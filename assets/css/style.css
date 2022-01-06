@@ -55,6 +55,17 @@ body {
     background-color: white;
 }
 
+.blueBG {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #5CE0E6;
+    text-align: center;
+}
+
+.waves {
+    width: 100%;
+}
+
 footer {
     padding: 20px;
     color: white;
@@ -99,13 +110,6 @@ h2, h3{
     margin-top: 20px;
 }
 
-.jumbotron {
-    font-size: 20px;
-    padding: 60px;
-    background-color: #00c8eb;
-    text-align: center;
-    color: white;
-}
 
 
 #content {
