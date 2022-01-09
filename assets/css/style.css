@@ -169,11 +169,14 @@ th{
 
 
 td {
+    text-align: left;
+    padding: 10px;
+}
+
+td a {
     font-weight: normal;
     font-size: 20px;
     color: #2D3748;
-    text-align: left;
-    padding: 10px;
 }
 
 span{
