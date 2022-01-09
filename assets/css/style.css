@@ -66,10 +66,12 @@ body {
 }
 
 .featured-image{
-    max-height: 500px;
+    /* max-height: 500px; */
+    width: 80%;
     object-fit: cover;
     object-position: center;
-    margin: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .blueBG {
@@ -81,14 +83,6 @@ body {
     flex-direction: row-reverse;
 }
 
-.flex-image{
-    flex-grow: 1;
-}
-
-.flex-text{
-    flex-grow: 2;
-}
-
 .blueBG h2{
     color: white;
     font-size: 48px;
@@ -97,7 +91,7 @@ body {
 
 .whiteBG {
     font-size: 20px;
-    padding: 60px;
+    padding: 100px;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -109,12 +103,31 @@ body {
     padding: 50px;
 }
 
+.whiteBG ul{
+    font-size: 20px;
+    color: #2D3748;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+.flex-image{
+    flex: 1;
+}
+
+.flex-text{
+    flex: 1;
+}
+
 .waves {
     width: 100%;
 }
 
 .google-play{
     max-height: 50px;
+    margin-top: 20px;
 }
 
 .card {
@@ -154,12 +167,23 @@ footer p{
     margin-bottom: 0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1050px) {
+    .blueBG,
+    .whiteBG{
+        flex-direction: column;
+    }
+
     #content,
-    aside,
-    .featured-image,
-    .card{
+    aside, p{
         width: 100%;
         padding: 0;
+        margin: 0;
     }
+
+    .featured-image,
+    .card{
+        width: 80%;
+    }
+    
+    
 }
