@@ -173,7 +173,6 @@ th{
     padding-left: 20px;
 }
 
-
 td {
     text-align: left;
     padding: 10px;   
@@ -264,5 +263,10 @@ footer p{
 
     p {
         font-size: 18px;
+    }
+
+    th{
+        padding: 10px;
+        padding-left: 0;;
     }
 }
