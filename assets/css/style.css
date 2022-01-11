@@ -97,10 +97,6 @@ body {
     text-align: center;
 }
 
-.calculatorBG{
-    flex-direction: column;
-}
-
 .whiteBG {
     font-size: 20px;
     padding: 100px;
@@ -144,6 +140,76 @@ body {
     cursor: pointer;
 }
 
+.calculatorBG{
+    flex-direction: column;
+}
+
+.calculator-container{
+    background-color: #EBF8FF;
+    margin: 50px 0px;
+    display: flex;
+    border-radius: 8px;
+}
+
+.calculator-items{
+    flex: 5;
+    color: #2D3748;
+}
+
+.calculator-line{
+    flex: 0.1;
+    background-color: #718096;
+}
+
+.calculator-result{
+    flex: 5;
+}
+
+.calculator-items h4{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.calculator-items table{
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+.calculator-items th{
+    font-size: 20px;
+}
+
+.calculator-items td{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.calculator-items td button{
+    width: 100%;
+    background-color: #718096;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+}
+
+.calculator-items td button:hover{
+    background-color: #18E8D9;
+}
+
+.hitung-button{
+    width: 20%;
+    background-color: #5982E8;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    border: none;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+
 .card {
     box-shadow: 4px 8px 8px 0px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
@@ -166,23 +232,23 @@ h3 {
     margin-left: 20px;
 }
 
-table {
+section table {
     width: 100%;
     margin: 20px;
 }
 
-th{
+section th{
     text-align: right;
     padding: 10px;
     padding-left: 20px;
 }
 
-td {
+section td {
     text-align: left;
     padding: 10px;   
 }
 
-td a {
+section td a {
     font-weight: normal;
     font-size: 20px;
     color: #2D3748;
