@@ -149,11 +149,11 @@ body {
     margin: 50px 0px;
     display: flex;
     border-radius: 8px;
+    color: #2D3748;
 }
 
 .calculator-items{
     flex: 5;
-    color: #2D3748;
 }
 
 .calculator-line{
@@ -165,7 +165,7 @@ body {
     flex: 5;
 }
 
-.calculator-items h4{
+.calculator-container h4{
     font-size: 30px;
     text-align: center;
     padding: 20px;
@@ -208,6 +208,57 @@ body {
     border: none;
     padding: 15px;
     margin-bottom: 40px;
+}
+
+.hitung-button:hover{
+    background-color: #2D3748;
+}
+
+.calculator-result p{
+    text-align: center;
+    padding: 10px;
+    line-height: 0;
+}
+
+.calculator-result table{
+    text-align: center;
+    width: 90%;
+    margin: 20px 0px;
+}
+
+.bar-container{
+    width: 100%;
+    height: 20px;
+    display: flex;
+}
+
+.bar-container-rendah{
+    background-color: lightcoral; 
+    flex: 30%;
+}
+
+.bar-container-ideal{
+    background-color: lightgreen; 
+    flex: 12%;
+}
+
+.bar-container-berlebih{
+    background-color: orange;
+    flex: 24%;
+}
+
+.bar-container-obesitas{
+    background-color: maroon;
+    flex: 34%;
+}
+
+.triangle{
+    margin-left: calc(23.4% * 1.6);
+    width: 1%;
+    border-bottom: 16px solid black;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    margin-bottom: 20px;
 }
 
 .card {
@@ -292,6 +343,10 @@ footer p{
         width: 80%;
         object-position: center;
         object-fit: cover;
+    }
+
+    .calculator-container{
+        flex-direction: column;
     }
 
     nav li{
