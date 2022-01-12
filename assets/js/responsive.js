@@ -1,12 +1,16 @@
 function myFunction() {
-    var x = document.getElementsByTagName("nav");
-    if (x.className === "navbar") {
-        x.className += " responsive";
-    } else {
-        x.className = "navbar";
-    }
+    var x = document.getElementsById("menuABC");
+    alert(x.className);
+    // x.className = "responsive";
+    // if (x.className === "tai") {
+    //     x.className = "responsive";
+    // } 
+    // else {
+    //     x.className = "navbar";
+    // }
 }
 
+// untuk alert saat click Google Play
 const buttons = document.querySelectorAll(".button");
 for(let button of buttons){
     button.addEventListener('click', function(event){

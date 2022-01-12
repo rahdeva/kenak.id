@@ -349,25 +349,34 @@ footer p{
         flex-direction: column;
     }
 
-    nav li{
+    /* header{
+        display: block;
+        width: 100%;
+    } */
+
+    .tai li{
         display: none;
     }
 
-    nav .icon {
+    .tai .icon {
         display: block;
-        padding: 12px;
+        right: 0;
+        top: 0;
     }
 
-    /* nav .responsive .icon {
-        position: absolute;
+    .responsive .icon {
         display: block;
-    } */
+        /* position: absolute; */
+        background-color: #18E8D9;
+        color: #5CE0E6;
+    }
 
-    /* nav .responsive a {
-        float: none;
+    .responsive li {
+        /* width: 100%; */
         display: block;
         text-align: left;
-    } */
+        background-color: wheat;
+    }
 }
 
 @media screen and (max-width: 500px) {
