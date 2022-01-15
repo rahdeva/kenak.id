@@ -366,8 +366,9 @@ footer p{
 
     .responsive .icon {
         display: block;
-        /* position: absolute; */
+        
         background-color: #18E8D9;
+        /* position: absolute; */
         color: #5CE0E6;
     }
 
