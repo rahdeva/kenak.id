@@ -374,8 +374,8 @@ footer p{
 
     .responsive li {
         /* width: 100%; */
-        display: block;
-        text-align: left;
+        /* display: block;
+        text-align: left; */
         background-color: wheat;
     }
 }
