@@ -7,6 +7,7 @@
     <link rel="icon" href="assets/images/icon-logo.svg">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Kenak.id</title>
 </head>
 <body>
@@ -32,20 +33,22 @@
 
     <main>
         <div id="content">
-            <article id="about" class="blueBG">
-                <div class="flex-image">
-                    <img src="assets/images/what-Kenak.id.svg" class="featured-image" alt="Logo Kenak.id">
-                </div>
-                <div class="flex-text">
-                    <h2>What is Kenak.id ?</h2>
-                    <p>Sebuah Aplikasi Penyedia Informasi mengenai Kesehatan dan Kebugaran dengan banyak fitur tersedia yang dapat membantu Anda untuk menjalani hidup sehat.<br></p>
-                    <p><span>Fun Fact:</span><br>“Kenak” dalam bahasa Bali berarti <span>sehat.</span></p>
-                    <img src="assets/images/google-play.svg" class="google-play button" alt="Google Play">
-                </div>
-            </article>
-            <img src="assets/images/waves.svg" class="waves" alt="Waves">
+            <div data-aos="fade-down">
+                <article id="about" class="blueBG" >
+                    <div class="flex-image">
+                        <img src="assets/images/what-Kenak.id.svg" class="featured-image" alt="Logo Kenak.id">
+                    </div>
+                    <div class="flex-text">
+                        <h2>What is Kenak.id ?</h2>
+                        <p>Sebuah Aplikasi Penyedia Informasi mengenai Kesehatan dan Kebugaran dengan banyak fitur tersedia yang dapat membantu Anda untuk menjalani hidup sehat.<br></p>
+                        <p><span>Fun Fact:</span><br>“Kenak” dalam bahasa Bali berarti <span>sehat.</span></p>
+                        <img src="assets/images/google-play.svg" class="google-play button" alt="Google Play">
+                    </div>
+                </article>
+                <img src="assets/images/waves.svg" class="waves" alt="Waves" >
+            </div>
             
-            <article class="whiteBG">
+            <article class="whiteBG" data-aos="fade-up" >
                 <div class="flex-image">
                     <img src="assets/images/about.svg" class="featured-image" alt="About">
                 </div>
@@ -64,7 +67,7 @@
                 </div>
             </article>
 
-            <article id="tracker" class="blueBG">
+            <article id="tracker" class="blueBG" data-aos="fade-up">
                 <div class="flex-image">
                     <img src="assets/images/tracker.svg" class="featured-image" alt="Tracker">
                 </div>
@@ -75,7 +78,7 @@
                 </div>
             </article>
             
-            <article id="reminder" class="whiteBG">
+            <article id="reminder" class="whiteBG" data-aos="fade-up">
                 <div class="flex-image">
                     <img src="assets/images/reminder.svg" class="featured-image" alt="Reminder">
                 </div>
@@ -85,7 +88,7 @@
                 </div>
             </article>
 
-            <article id="blog" class="blueBG">
+            <article id="blog" class="blueBG" data-aos="fade-up">
                 <div class="flex-image">
                     <img src="assets/images/blog.svg" class="featured-image" alt="Blogs">
                 </div>
@@ -95,7 +98,7 @@
                 </div>
             </article>
             
-            <article id="challenges" class="whiteBG">
+            <article id="challenges" class="whiteBG" data-aos="fade-up">
                 <div class="flex-image">
                     <img src="assets/images/challenges.svg" class="featured-image" alt="Challenges">
                 </div>
@@ -106,7 +109,7 @@
                 </div>
             </article>
             
-            <article id="calculator" class="blueBG calculatorBG">
+            <article id="calculator" class="blueBG calculatorBG" data-aos="fade-up">
                 <div class="flex-text">
                     <h2>BMI Calculator</h2>
                     <p>Body Mass Index (BMI) adalah cara menghitung berat badan ideal berdasarkan tinggi dan berat badan. Kalkulator BMI adalah alat untuk mengidentifikasi apakah berat badan kamu termasuk dalam kategori ideal atau tidak. Kalkulator ini dapat digunakan oleh seseorang yang berusia 20 tahun ke atas.<br></p>
@@ -165,14 +168,14 @@
         
         <aside>
             <article id="biodata" class="whiteBG">
-                <figure class="flex-image">
+                <figure class="flex-image" data-aos="fade-up">
                     <img class="card" src="assets/images/profile-picture.svg" alt="Profile Picture">
                 </figure>
                 <div class="flex-text">
-                    <header>
+                    <header data-aos="fade-up">
                         <h2>Biodata</h2>
                     </header>
-                    <section>
+                    <section data-aos="fade-up">
                         <h3>Gusti Ngurah Deva Wirandana Putra</h3>
                         <table>
                             <tr>
@@ -200,5 +203,11 @@
 
     <script src="assets/js/responsive.js"></script>
     <script src="assets/js/kalkulator.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2500
+        });
+    </script>
 </body>
 </html>
