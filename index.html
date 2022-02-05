@@ -118,27 +118,24 @@
                 <div class="calculator-container">
                     <div class="calculator-items">
                         <h4>BMI Calculator</h4>
-                        <table>
-                            <tr>
-                                <th>Jenis Kelamin</th>
-                                <td>:</td>
-                                <td><button>Laki-laki</button></td>
-                                <td><button>Perempuan</button></td>
-                            </tr>
-                            <tr>
-                                <th>Tinggi Badan</th>
-                                <td>:</td>
-                                <td><form action="175">175</form></td>
-                                <td>cm</td>
-                            </tr>
-                            <tr>
-                                <th>Berat Badan</th>
-                                <td>:</td>
-                                <td><form action="175">60</form></td>
-                                <td>kg</td>
-                            </tr>
-                        </table>
-                        <button class="hitung-button">  Hitung BMI  </button>
+                        <form class="form">
+                            <div class="form-group">
+                                <label for="title">Jenis Kelamin : </label>
+                                <input type="button" class="buttonKelamin" name="button" value="Laki-laki" required>
+                                <input type="button" class="buttonKelamin" name="button" value="Perempuan" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="title">Tinggi Badan : </label>
+                                <input type="text" id="title" name="title" required>
+                                <label>cm</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="title">Berat Badan : </label>
+                                <input type="text" id="title" name="title" required>
+                                <label>kg</label>
+                            </div>
+                            <input type="submit" value="Hitung BMI" name="Submit" class="btn-submit">
+                        </form>
                     </div>
                     <div class="calculator-line"></div>
                     <div class="calculator-result">

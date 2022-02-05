@@ -140,6 +140,56 @@ body {
     cursor: pointer;
 }
 
+.form {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.form-group {
+    margin: 24px;
+    text-align: center;
+}
+
+.form-group label {
+    font-size: 20px;
+}
+
+.buttonKelamin {
+    width: fit-content;
+    background-color: #718096;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.buttonKelamin:hover{
+    background-color: #18E8D9;
+}
+
+.btn-submit {
+    width: fit-content;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #5982E8;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.btn-submit:hover{
+    background-color: #2D3748;
+}
+
+input{
+    background: #F5F1FF;
+    border: 2px solid #718096;
+    border-radius: 6px;
+}
+
 .calculatorBG{
     flex-direction: column;
 }
@@ -170,48 +220,6 @@ body {
     text-align: center;
     padding: 20px;
     margin-top: 20px;
-}
-
-.calculator-items table{
-    width: 95%;
-    margin-bottom: 20px;
-}
-
-.calculator-items th{
-    font-size: 20px;
-}
-
-.calculator-items td{
-    padding: 10px;
-    font-size: 20px;
-}
-
-.calculator-items td button{
-    width: 100%;
-    background-color: #718096;
-    color: white;
-    border-radius: 6px;
-    border: none;
-    padding: 10px;
-}
-
-.calculator-items td button:hover{
-    background-color: #18E8D9;
-}
-
-.hitung-button{
-    width: 20%;
-    background-color: #5982E8;
-    color: white;
-    border-radius: 6px;
-    font-weight: bold;
-    border: none;
-    padding: 15px;
-    margin-bottom: 40px;
-}
-
-.hitung-button:hover{
-    background-color: #2D3748;
 }
 
 .calculator-result p{
