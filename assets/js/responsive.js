@@ -1,13 +1,10 @@
 function myFunction() {
-    var x = document.getElementsById("menuABC");
-    alert(x.className);
-    // x.className = "responsive";
-    // if (x.className === "tai") {
-    //     x.className = "responsive";
-    // } 
-    // else {
-    //     x.className = "navbar";
-    // }
+    var x = document.getElementById("myTopnav");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
 }
 
 // untuk alert saat click Google Play
