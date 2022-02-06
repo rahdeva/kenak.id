@@ -154,20 +154,6 @@ body {
     font-size: 20px;
 }
 
-.buttonKelamin {
-    width: fit-content;
-    background-color: #718096;
-    color: white;
-    border-radius: 6px;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.buttonKelamin:hover{
-    background-color: #18E8D9;
-}
-
 .btn-submit {
     width: fit-content;
     border: none;
@@ -261,7 +247,7 @@ input{
 }
 
 .triangle{
-    margin-left: calc(23.4% * 1.6);
+    margin-left: calc(var(--BMI)/100 * 1.6);
     width: 1%;
     border-bottom: 16px solid black;
     border-right: 8px solid transparent;
@@ -313,7 +299,7 @@ section td a {
     color: #2D3748;
 }
 
-span{
+.boldSpan{
     font-weight: bold;
 }
 

@@ -11,7 +11,7 @@
     <title>Kenak.id</title>
 </head>
 <body>
-    <header class="navbar" id="myTopnav">
+    <header class="navbar" id="myTopnav" >
         <img src="assets/images/icon-logo.svg" class="logo-image" alt="Logo Kenak.id">
         <img src="assets/images/text-logo.svg" class="text-logo-image" alt="Text Logo Kenak.id">
         <div class="space-header"></div>
@@ -41,21 +41,21 @@
                     <div class="flex-text">
                         <h2>What is Kenak.id ?</h2>
                         <p>Sebuah Aplikasi Penyedia Informasi mengenai Kesehatan dan Kebugaran dengan banyak fitur tersedia yang dapat membantu Anda untuk menjalani hidup sehat.<br></p>
-                        <p><span>Fun Fact:</span><br>“Kenak” dalam bahasa Bali berarti <span>sehat.</span></p>
+                        <p><span class="boldSpan">Fun Fact:</span><br>“Kenak” dalam bahasa Bali berarti <span class="boldSpan">sehat.</span></p>
                         <img src="assets/images/google-play.svg" class="google-play button" alt="Google Play">
                     </div>
                 </article>
                 <img src="assets/images/waves.svg" class="waves" alt="Waves" >
             </div>
             
-            <article class="whiteBG" data-aos="fade-up" >
+            <article class="whiteBG" data-aos="fade-down" >
                 <div class="flex-image">
                     <img src="assets/images/about.svg" class="featured-image" alt="About">
                 </div>
                 <div class="flex-text">
                     <h2>Why You Should Use Kenak.id ?</h2>
                     <p>Dengan menggunakan Aplikasi Kenak.id, Anda dapat mendapatkan pengalaman baru yang membantu anda untuk menjalani hidup sehat.<br></p>
-                    <p><span>Fitur:</span>
+                    <p><span class="boldSpan">Fitur:</span>
                     </p>
                     <ul style="list-style-type:disc;">
                         <li>Exercise Tracker & Exercise Report</li>
@@ -67,7 +67,7 @@
                 </div>
             </article>
 
-            <article id="tracker" class="blueBG" data-aos="fade-up">
+            <article id="tracker" class="blueBG" data-aos="fade-down">
                 <div class="flex-image">
                     <img src="assets/images/tracker.svg" class="featured-image" alt="Tracker">
                 </div>
@@ -78,7 +78,7 @@
                 </div>
             </article>
             
-            <article id="reminder" class="whiteBG" data-aos="fade-up">
+            <article id="reminder" class="whiteBG" data-aos="fade-down">
                 <div class="flex-image">
                     <img src="assets/images/reminder.svg" class="featured-image" alt="Reminder">
                 </div>
@@ -88,7 +88,7 @@
                 </div>
             </article>
 
-            <article id="blog" class="blueBG" data-aos="fade-up">
+            <article id="blog" class="blueBG" data-aos="fade-down">
                 <div class="flex-image">
                     <img src="assets/images/blog.svg" class="featured-image" alt="Blogs">
                 </div>
@@ -98,7 +98,7 @@
                 </div>
             </article>
             
-            <article id="challenges" class="whiteBG" data-aos="fade-up">
+            <article id="challenges" class="whiteBG" data-aos="fade-down">
                 <div class="flex-image">
                     <img src="assets/images/challenges.svg" class="featured-image" alt="Challenges">
                 </div>
@@ -109,7 +109,7 @@
                 </div>
             </article>
             
-            <article id="calculator" class="blueBG calculatorBG" data-aos="fade-up">
+            <article id="calculator" class="blueBG calculatorBG" data-aos="fade-down">
                 <div class="flex-text">
                     <h2>BMI Calculator</h2>
                     <p>Body Mass Index (BMI) adalah cara menghitung berat badan ideal berdasarkan tinggi dan berat badan. Kalkulator BMI adalah alat untuk mengidentifikasi apakah berat badan kamu termasuk dalam kategori ideal atau tidak. Kalkulator ini dapat digunakan oleh seseorang yang berusia 20 tahun ke atas.<br></p>
@@ -118,46 +118,30 @@
                 <div class="calculator-container">
                     <div class="calculator-items">
                         <h4>BMI Calculator</h4>
-                        <form class="form">
+                        <form class="form" id="form">
                             <div class="form-group">
-                                <label for="title">Jenis Kelamin : </label>
-                                <input type="button" class="buttonKelamin" name="button" value="Laki-laki" required>
-                                <input type="button" class="buttonKelamin" name="button" value="Perempuan" required>
+                                <label for="kelamin">Jenis Kelamin : </label>
+                                <input type="radio" class="radioKelamin" name="jenisKelamin" value="Laki-laki" required>
+                                <label for="lakiLaki">Laki-laki</label>
+                                <input type="radio" class="radioKelamin" name="jenisKelamin" value="Perempuan" required>
+                                <label for="perempuan">Perempuan</label>
                             </div>
                             <div class="form-group">
-                                <label for="title">Tinggi Badan : </label>
-                                <input type="text" id="title" name="title" required>
+                                <label for="tinggi">Tinggi Badan : </label>
+                                <input type="text" id="tinggi" name="tinggi" required>
                                 <label>cm</label>
                             </div>
                             <div class="form-group">
-                                <label for="title">Berat Badan : </label>
-                                <input type="text" id="title" name="title" required>
+                                <label for="berat">Berat Badan : </label>
+                                <input type="text" id="berat" name="berat" required>
                                 <label>kg</label>
                             </div>
                             <input type="submit" value="Hitung BMI" name="Submit" class="btn-submit">
                         </form>
                     </div>
                     <div class="calculator-line"></div>
-                    <div class="calculator-result">
+                    <div class="calculator-result" id="result">
                         <h4>Hasil</h4>
-                        <p>BMI untuk Jenis Kelamin</p>  
-                        <table>
-                            <tr>
-                                <th>Tinggi (cm) </th>
-                                <td>160</td>
-                                <th>Berat (kg) </th>
-                                <td>60</td>
-                            </tr>
-                        </table>
-                        <div class="bar-container">
-                            <div class="bar-container-rendah"></div>
-                            <div class="bar-container-ideal"></div>
-                            <div class="bar-container-berlebih"></div>
-                            <div class="bar-container-obesitas"></div>
-                        </div>
-                        <div class="triangle"></div>
-                        <p>BMI Anda : 23.4</p>
-                        <p>Berat Ideal</p>
                     </div>
                 </div>
             </article>
@@ -165,14 +149,14 @@
         
         <aside>
             <article id="biodata" class="whiteBG">
-                <figure class="flex-image" data-aos="fade-up">
+                <figure class="flex-image" data-aos="fade-down">
                     <img class="card" src="assets/images/profile-picture.svg" alt="Profile Picture">
                 </figure>
                 <div class="flex-text">
-                    <header data-aos="fade-up">
+                    <header data-aos="fade-down">
                         <h2>Biodata</h2>
                     </header>
-                    <section data-aos="fade-up">
+                    <section data-aos="fade-down">
                         <h3>Gusti Ngurah Deva Wirandana Putra</h3>
                         <table>
                             <tr>
@@ -198,8 +182,8 @@
         <p>Copyright &#169; Ngurah Deva 2022</p>
     </footer>
 
-    <script src="assets/js/responsive.js"></script>
-    <script src="assets/js/kalkulator.js"></script>
+    <script src="assets/js/kalkulator.js" type="text/javascript"></script>
+    <script src="assets/js/script.js" type="text/javascript"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({

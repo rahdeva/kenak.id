@@ -1,3 +1,4 @@
+// untuk responsive navigation bar
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "navbar") {
@@ -21,3 +22,11 @@ for(let button of buttons){
         }
     })
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const submitForm = document.getElementById("form");
+    submitForm.addEventListener("submit", function (event) {
+        event.preventDefault();   
+        addResult();
+    });
+});
