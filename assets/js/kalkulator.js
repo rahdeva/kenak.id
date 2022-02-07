@@ -3,10 +3,8 @@ function addResult() {
     const jenisKelamin = "Laki-laki"
     const tinggiBadan = document.getElementById("tinggi").value;
     const beratBadan = document.getElementById("berat").value;
-    console.log(tinggiBadan);
-    console.log(beratBadan);
 
-    const BMI = calculateBMI(jenisKelamin, tinggiBadan, beratBadan)
+    const BMI = calculateBMI(jenisKelamin, tinggiBadan, beratBadan);
     let ideal = "";
     if(BMI >= 18.5 && BMI <= 25)
         ideal = "Berat Ideal";
@@ -15,7 +13,7 @@ function addResult() {
     else if(BMI > 25)
         ideal = "Berat Berlebih";
     else
-        ideal = "Berat Rendah"
+        ideal = "Berat Rendah";
     makeResult(jenisKelamin, tinggiBadan, beratBadan, BMI, ideal);
 }
 
@@ -23,7 +21,6 @@ function calculateBMI(kelamin, tinggi, berat){
     let BMI = 0;
     BMI = berat / ((tinggi / 100)**2);
 
-    console.log(BMI.toFixed(2));
     return BMI.toFixed(1);
 }
 
@@ -60,9 +57,10 @@ function makeResult(kelamin, tinggi, berat, BMI, ideal) {
 
     const triangle = document.createElement("div");
     triangle.classList.add("triangle");
+    const triangleBMIAttribute = "--bmi: " + BMI + "%;";
+    triangle.setAttribute("style", triangleBMIAttribute);
 
     const BMIResult = document.createElement("p");
-    BMIResult.setAttribute("style", "--bmi");
     BMIResult.innerText = "BMI Anda : " + BMI;
 
     const BeratIdeal = document.createElement("p");
