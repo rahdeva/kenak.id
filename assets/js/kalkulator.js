@@ -1,20 +1,31 @@
-function addResult() {
-    // const jenisKelamin = document.getElementById("kelamin").value;
-    const jenisKelamin = "Laki-laki"
-    const tinggiBadan = document.getElementById("tinggi").value;
-    const beratBadan = document.getElementById("berat").value;
+let allowSubmit = true;
 
-    const BMI = calculateBMI(jenisKelamin, tinggiBadan, beratBadan);
-    let ideal = "";
-    if(BMI >= 18.5 && BMI <= 25)
-        ideal = "Berat Ideal";
-    else if(BMI > 40)
-        ideal = "Obesitas";
-    else if(BMI > 25)
-        ideal = "Berat Berlebih";
-    else
-        ideal = "Berat Rendah";
-    makeResult(jenisKelamin, tinggiBadan, beratBadan, BMI, ideal);
+function addResult() {
+    if(allowSubmit){
+        const radioJenisKelamin = document.getElementsByClassName("radioKelamin");
+        let jenisKelamin = "";
+        for (var i = 0, length = radioJenisKelamin.length; i < length; i++) {
+            if (radioJenisKelamin[i].checked) {
+                jenisKelamin = radioJenisKelamin[i].value;
+                break;
+            }
+        }
+        const tinggiBadan = document.getElementById("tinggi").value;
+        const beratBadan = document.getElementById("berat").value;
+    
+        const BMI = calculateBMI(jenisKelamin, tinggiBadan, beratBadan);
+        let ideal = "";
+        if(BMI >= 18.5 && BMI <= 25)
+            ideal = "Berat Ideal";
+        else if(BMI > 40)
+            ideal = "Obesitas";
+        else if(BMI > 25)
+            ideal = "Berat Berlebih";
+        else
+            ideal = "Berat Rendah";
+        makeResult(jenisKelamin, tinggiBadan, beratBadan, BMI, ideal);
+        allowSubmit = false;
+    }
 }
 
 function calculateBMI(kelamin, tinggi, berat){
@@ -63,7 +74,8 @@ function makeResult(kelamin, tinggi, berat, BMI, ideal) {
     const BMIResult = document.createElement("p");
     BMIResult.innerText = "BMI Anda : " + BMI;
 
-    const BeratIdeal = document.createElement("p");
+    const BeratIdeal = document.createElement("span");
+    BeratIdeal.classList.add("ideal");
     BeratIdeal.innerText = ideal;
 
     calculatorResult.append(textJenisKelamin, table, barContainer, triangle, BMIResult, BeratIdeal);

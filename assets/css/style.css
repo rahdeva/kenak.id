@@ -260,6 +260,13 @@ input{
     border-radius: 20px;
 }
 
+.ideal{
+    color: #5982E8;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 50px;
+}
+
 p {
     font-size: 20px;
     color: #2D3748;
@@ -341,6 +348,23 @@ footer p{
 
     .calculator-container{
         flex-direction: column;
+    }
+
+    .calculator-items{
+        flex: 2;
+    }
+    
+    .calculator-line{
+        flex: 1;
+    }
+    
+    .calculator-result{
+        flex: 2;
+        margin-bottom: 50px;
+    }
+
+    input[type=number]{
+        width: 5em;
     }
 
     header{
